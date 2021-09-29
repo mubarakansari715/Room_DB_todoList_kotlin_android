@@ -34,9 +34,9 @@ class UserRepository {
         }
 
         //update data
-        fun update(context: Context, user:User)
+        fun update(user:User)
         {
-            userDatabase= intialiseDB(context)
+//            userDatabase= intialiseDB(context)
 
             CoroutineScope(Dispatchers.IO).launch {
                 userDatabase!!.userDao().update(user)

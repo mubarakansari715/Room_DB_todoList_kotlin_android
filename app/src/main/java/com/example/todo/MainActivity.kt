@@ -10,7 +10,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_main.*
@@ -85,10 +84,8 @@ class MainActivity : AppCompatActivity(), UserAdapter.RowClickListener {
             val getName = update_name.text.toString().trim()
             val getAge = update_age.text.toString().trim()
 
-            lifecycleScope.launchWhenStarted {
-                userViewModel.update(User(getName, getAge))
-            }
 
+            userViewModel.update(User(getName, getAge))
 
 //            Toast.makeText(applicationContext, " Update successfully.. ${userViewModel}", Toast.LENGTH_SHORT)
 //                .show()

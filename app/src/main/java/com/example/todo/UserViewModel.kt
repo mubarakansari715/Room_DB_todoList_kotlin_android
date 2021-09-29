@@ -1,12 +1,10 @@
 package com.example.todo
 
-import android.app.Application
 import android.content.Context
-import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 
-class UserViewModel (app: Application): AndroidViewModel(app) {
+class UserViewModel  : ViewModel() {
 
     fun insert(context: Context, user: User) {
         UserRepository.insert(context, user)
@@ -16,10 +14,8 @@ class UserViewModel (app: Application): AndroidViewModel(app) {
         UserRepository.delete(user)
     }
 
-    suspend fun update(user: User) {
-        val userDao = UserDatabase.getInstance(getApplication())?.userDao()
-        userDao?.update(user)
-        //UserRepository.update(user)
+    fun update(user: User) {
+        UserRepository.update(user)
     }
 
     fun getAllUserData(context: Context): LiveData<List<User>> {
