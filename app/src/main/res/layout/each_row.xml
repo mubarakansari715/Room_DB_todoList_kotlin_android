@@ -5,6 +5,7 @@
     android:layout_height="wrap_content"
     app:cardCornerRadius="8dp"
     app:cardElevation="8dp"
+    android:id="@+id/id_card"
     app:cardMaxElevation="8dp"
     app:cardUseCompatPadding="true">
 
@@ -13,6 +14,15 @@
         android:layout_height="match_parent"
         android:layout_margin="10dp"
         android:orientation="vertical">
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/id_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="id"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/name"
@@ -33,6 +43,7 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textSize="30sp"
              />
+
 
     </LinearLayout>
 

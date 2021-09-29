@@ -16,6 +16,7 @@ class UserRepository {
             return UserDatabase.getInstance(context)!!
         }
 
+        //insert data
         fun insert(context: Context, user:User)
         {
             userDatabase= intialiseDB(context)
@@ -25,6 +26,24 @@ class UserRepository {
             }
         }
 
+        //delete
+        fun delete(user: User){
+            CoroutineScope(Dispatchers.IO).launch {
+                userDatabase!!.userDao().delete(user)
+            }
+        }
+
+        //update data
+        fun update(context: Context, user:User)
+        {
+            userDatabase= intialiseDB(context)
+
+            CoroutineScope(Dispatchers.IO).launch {
+                userDatabase!!.userDao().update(user)
+            }
+        }
+
+        //show all data
         fun getAllUserData(context: Context): LiveData<List<User>>
         {
             userDatabase= intialiseDB(context)

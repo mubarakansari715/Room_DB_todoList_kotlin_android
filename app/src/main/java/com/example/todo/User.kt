@@ -4,7 +4,10 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity(tableName = "user")
-data class User(val name:String,val age:Int) {
+data class User(
+    var name: String,
+    var age: String
+) {
     @PrimaryKey(autoGenerate = true)
-    var id:Int?=null
+    var id: Int? = null
 }

@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Kotlin/AndroidStudioProjects/Room_DB_todoList/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Kotlin/AndroidStudioProjects/Room_DB_todoList/app/src/main/res/layout/dialog.xml" value="0.25416666666666665" />
+        <entry key="..\:/Kotlin/AndroidStudioProjects/Room_DB_todoList/app/src/main/res/layout/each_row.xml" value="0.25416666666666665" />
+        <entry key="..\:/Kotlin/AndroidStudioProjects/Room_DB_todoList/app/src/main/res/layout/update_dialog.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Mr.Ansari7/AndroidStudioProjects/todo/app/src/main/res/drawable-v24/add.xml" value="0.2630208333333333" />
         <entry key="..\:/Users/Mr.Ansari7/AndroidStudioProjects/todo/app/src/main/res/layout/activity_main.xml" value="0.24307692307692308" />
         <entry key="..\:/Users/Mr.Ansari7/AndroidStudioProjects/todo/app/src/main/res/layout/dialog.xml" value="0.246875" />
