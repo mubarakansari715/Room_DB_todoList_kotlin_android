@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">todo</string>
+    <string name="str_age">Enter your Age</string>
+    <string name="str_name">Enter your Name</string>
+    <string name="insert">Insert</string>
+    <string name="insert_data">Insert Data</string>
+    <string name="update">Update</string>
+    <string name="cancel">Cancel</string>
+    <string name="update_data">Update Data</string>
+</resources>
